@@ -1,0 +1,10 @@
+{
+  "name": "계산형",
+  "short_name": "계산형",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f1f2f3",
+  "theme_color": "#4f555b"
+}
