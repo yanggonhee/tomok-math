@@ -145,10 +145,152 @@ button.active{background:#4a4a4a!important;color:#fff!important;border-color:#4a
 }
 </style>
 
+
+<style id="today-ui-20261026">
+:root{color-scheme:light}
+html,body{background:#f3f3f3!important;color:#111!important;font-family:Arial,"Noto Sans KR",sans-serif}
+body{margin:0!important}
+.app{max-width:980px!important;margin:0 auto!important;padding:0 4px 18px!important;background:#f3f3f3!important}
+.top{position:sticky!important;top:0!important;z-index:50!important;background:#eee!important;border:0!important;border-bottom:1px solid #ccc!important;border-radius:0!important;padding:8px 10px 9px!important;box-shadow:none!important}
+.today-title-row{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.today-title{font-size:24px;font-weight:900;line-height:1.15;flex:1;border-bottom:5px solid #d7d7d7;padding-bottom:4px}
+.top-row{display:flex!important;align-items:center!important;gap:7px!important;min-height:0!important;flex-wrap:wrap!important}
+.stats{display:flex!important;gap:6px!important;align-items:center!important;padding:0!important;border:0!important;flex:1!important;flex-wrap:wrap!important}
+.stat{background:#f7f7f7!important;border:1px solid #ddd!important;border-radius:18px!important;padding:6px 9px!important;font-size:13px!important;font-weight:500!important;line-height:1!important;white-space:nowrap!important}
+.top-buttons{display:flex!important;gap:6px!important;margin-left:auto!important}
+.top-buttons button{height:38px!important;padding:0 12px!important;font-size:13px!important;border-radius:8px!important;background:#fff!important;border:1px solid #c9c9c9!important;font-weight:800!important}
+.chapter{width:100%!important;height:38px!important;margin-top:7px!important;padding:0 11px!important;border:1px solid #c9c9c9!important;border-radius:8px!important;background:#fff!important;font-size:14px!important;font-weight:800!important}
+.study-toolbar{display:grid!important;grid-template-columns:minmax(0,1fr) 110px 110px!important;gap:6px!important;margin-top:6px!important}
+.study-toolbar select,.study-toolbar button{height:38px!important;padding:0 10px!important;border:1px solid #c9c9c9!important;border-radius:8px!important;background:#fff!important;font-size:13px!important;font-weight:800!important}
+.progress-line{height:5px!important;margin-top:7px!important;background:#d7d7d7!important;border-radius:999px!important;overflow:hidden!important}
+.progress-line span{display:block!important;height:100%!important;background:#555!important}
+.progress-text{font-size:12px!important;font-weight:700!important;text-align:right!important;margin-top:4px!important;color:#444!important}
+.action-bar{background:#fff!important;border:1px solid #d4d4d4!important;border-radius:12px!important;padding:10px!important;margin-top:12px!important}
+.action-bar .main-actions{display:grid!important;grid-template-columns:1.05fr 1.05fr 1fr .72fr .72fr!important;gap:7px!important}
+.action-bar .main-actions button{height:44px!important;min-width:0!important;border:1px solid #bbb!important;border-radius:8px!important;background:#fff!important;color:#111!important;font-size:15px!important;font-weight:900!important;white-space:normal!important}
+.action-bar .main-actions .grade{background:#242424!important;color:#fff!important;border-color:#242424!important}
+.action-bar .main-actions button.active{background:#666!important;color:#fff!important;border-color:#666!important}
+.nav{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;gap:7px!important;margin-top:7px!important;align-items:center!important}
+.nav button{height:40px!important;border:1px solid #bbb!important;border-radius:8px!important;background:#fff!important;font-size:14px!important;font-weight:800!important}
+.position{height:40px!important;display:flex!important;align-items:center!important;justify-content:center!important;border:1px solid #ccc!important;border-radius:8px!important;background:#f7f7f7!important;font-size:14px!important;font-weight:900!important}
+.content{background:#fff!important;border:1px solid #d4d4d4!important;border-radius:12px!important;padding:10px!important;margin-top:8px!important;overflow:visible!important}
+.question-title{display:flex!important;align-items:center!important;min-height:34px!important;margin:0 0 9px!important;padding-bottom:8px!important;border-bottom:1px solid #ddd!important;font-size:15px!important;font-weight:900!important}
+.images{display:block!important;width:100%!important;height:auto!important;max-height:none!important;overflow:visible!important;margin:0!important;padding:0!important;text-align:center!important}
+.images img,.problem-img,.solution-img{display:block!important;width:auto!important;max-width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center!important;margin:0 auto 8px!important;clip:auto!important;clip-path:none!important;filter:none!important}
+.answer-label{display:block!important;font-weight:900!important;font-size:13px!important;margin:10px 0 5px!important}
+textarea{display:block!important;width:100%!important;min-height:82px!important;resize:vertical!important;border:1px solid #bbb!important;border-radius:8px!important;background:#fff!important;color:#000!important;padding:9px!important;font-size:15px!important;line-height:1.4!important}
+textarea:focus{outline:2px solid #888!important}
+.message{min-height:18px!important;margin-top:5px!important;font-size:12px!important;color:#666!important}
+.pen{display:none;margin-top:10px!important;border:1px solid #bbb!important;border-radius:8px!important;padding:8px!important;background:#fff!important}
+.pen-tools{display:flex!important;gap:6px!important;margin-bottom:6px!important}
+.pen-tools button{height:34px!important;padding:0 10px!important;border:1px solid #bbb!important;border-radius:8px!important;background:#fff!important;font-weight:800!important}
+.solution{display:none;margin-top:10px!important;padding-top:10px!important;border-top:1px solid #ddd!important;overflow:visible!important;max-height:none!important;height:auto!important}
+.answer-key{white-space:pre-wrap!important;border:1px solid #ccc!important;border-radius:8px!important;padding:9px!important;margin-bottom:7px!important;background:#fafafa!important}
+.self-check{margin-top:10px!important;padding:9px!important;border:1px solid #bbb!important;border-radius:8px!important;background:#fafafa!important}
+.self-check-title{font-weight:900!important;margin-bottom:7px!important;font-size:13px!important}
+.self-check-buttons{display:grid!important;grid-template-columns:1fr 1fr .8fr!important;gap:6px!important}
+.self-check-buttons button{height:38px!important;border:1px solid #bbb!important;border-radius:8px!important;background:#fff!important;font-weight:800!important}
+.self-check-buttons button.active{background:#666!important;color:#fff!important}
+.result-status{min-height:18px!important;margin-top:6px!important;font-size:12px!important;font-weight:700!important}
+.modal-card{border-radius:12px!important;border:1px solid #777!important}
+.chapter-row{border-radius:8px!important}
+.bottom{display:none!important}
+@media(max-width:700px){
+ .app{padding:0 0 12px!important}
+ .top{position:static!important;padding:6px 7px 8px!important}
+ .today-title{font-size:20px!important}
+ .stat{font-size:11px!important;padding:6px 7px!important}
+ .top-buttons button{height:36px!important;padding:0 9px!important;font-size:12px!important}
+ .chapter{height:37px!important;font-size:13px!important}
+ .study-toolbar{grid-template-columns:minmax(0,1fr) 82px 88px!important;gap:5px!important}
+ .study-toolbar select,.study-toolbar button{height:36px!important;padding:0 6px!important;font-size:12px!important}
+ .action-bar{border-radius:8px!important;margin-top:7px!important;padding:7px!important}
+ .action-bar .main-actions{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:5px!important}
+ .action-bar .main-actions button:nth-child(-n+3){grid-column:span 2!important}
+ .action-bar .main-actions button:nth-child(n+4){grid-column:span 3!important}
+ .action-bar .main-actions button{height:42px!important;font-size:13px!important}
+ .nav{gap:5px!important;margin-top:5px!important}
+ .nav button,.position{height:38px!important;font-size:13px!important}
+ .content{border-radius:8px!important;margin-top:7px!important;padding:8px!important}
+ .question-title{font-size:13px!important}
+ textarea{min-height:76px!important;font-size:14px!important}
+ canvas{height:58vh!important;min-height:420px!important;max-height:650px!important}
+}
+</style>
+
+
+<style id="question-picker-style">
+.position{cursor:pointer!important;user-select:none!important}
+.position:hover{background:#ececec!important}
+.position::after{content:" ▾";font-size:11px;color:#666}
+.qpick-modal{
+ display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.42);
+ align-items:center;justify-content:center;padding:14px
+}
+.qpick-modal.open{display:flex}
+.qpick-card{
+ width:min(620px,100%);max-height:86vh;background:#fff;border:1px solid #999;
+ border-radius:12px;display:flex;flex-direction:column;overflow:hidden
+}
+.qpick-head{
+ display:flex;align-items:center;gap:8px;padding:11px 12px;border-bottom:1px solid #ddd;background:#f5f5f5
+}
+.qpick-head strong{flex:1;font-size:16px}
+.qpick-head button{
+ height:34px;padding:0 11px;border:1px solid #bbb;border-radius:8px;background:#fff;font-weight:800
+}
+.qpick-sub{padding:8px 12px;font-size:12px;color:#555;border-bottom:1px solid #eee}
+.qpick-grid{
+ display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;padding:10px;overflow:auto
+}
+.qpick-grid button{
+ min-height:44px;border:1px solid #bbb;border-radius:8px;background:#fff;font-weight:900
+}
+.qpick-grid button.current{background:#242424!important;color:#fff!important;border-color:#242424!important}
+.qpick-grid button:hover{background:#eee}
+@media(max-width:700px){
+ .qpick-card{max-height:92vh}
+ .qpick-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;padding:8px}
+ .qpick-grid button{min-height:42px;font-size:13px}
+ .qpick-head strong{font-size:14px}
+}
+</style>
+
+
+<style id="split-answer-ui">
+.answer-fields{display:grid;gap:7px}
+.answer-part{display:grid;grid-template-columns:72px minmax(0,1fr);gap:7px;align-items:center}
+.answer-part label{
+ font-size:13px;font-weight:900;text-align:center;padding:9px 5px;
+ border:1px solid #ccc;border-radius:8px;background:#f7f7f7
+}
+.answer-part textarea{
+ width:100%!important;min-height:48px!important;height:48px!important;
+ resize:vertical!important;margin:0!important;padding:9px!important;
+ border:1px solid #bbb!important;border-radius:8px!important;
+ background:#fff!important;color:#000!important;font-size:15px!important;line-height:1.35!important
+}
+.answer-part textarea:focus{outline:2px solid #777!important}
+.answer-field-tools{display:flex;gap:6px;margin-top:7px}
+.answer-field-tools button{
+ height:34px;padding:0 10px;border:1px solid #bbb;border-radius:8px;
+ background:#fff;font-size:12px;font-weight:800
+}
+.answer-enter-note{font-size:11px;color:#666;margin-top:5px}
+@media(max-width:700px){
+ .answer-part{grid-template-columns:58px minmax(0,1fr);gap:5px}
+ .answer-part label{font-size:12px;padding:8px 3px}
+ .answer-part textarea{min-height:44px!important;height:44px!important;font-size:14px!important}
+}
+</style>
+
 </head>
 <body>
 <div class="app">
   <header class="top">
+    <div class="today-title-row">
+      <div class="today-title">토목기사 실기</div>
+    </div>
     <div class="top-row">
       <div class="stats">
         <span class="stat" id="topPosition">1 / 588</span>
@@ -156,7 +298,7 @@ button.active{background:#4a4a4a!important;color:#fff!important;border-color:#4a
         <span class="stat">오답 <b id="wrongCount">0</b></span>
       </div>
       <div class="top-buttons">
-        <button id="randomBtn">랜덤</button>
+        <button id="randomBtn">랜덤 퀴즈</button>
         <button id="resetBtn">초기화</button>
       </div>
     </div>
@@ -178,7 +320,7 @@ button.active{background:#4a4a4a!important;color:#fff!important;border-color:#4a
   <section class="action-bar" aria-label="학습 버튼">
     <div class="main-actions">
       <button class="grade" id="gradeBtn">답안 저장</button>
-      <button id="solutionBtn">정답·해설 보기</button>
+      <button id="solutionBtn">정답·해설</button>
       <button id="penBtn">풀이 필기</button>
       <button class="status-btn" id="knownBtn">○ 숙지</button>
       <button class="status-btn" id="unknownBtn">○ 미숙지</button>
@@ -195,7 +337,12 @@ button.active{background:#4a4a4a!important;color:#fff!important;border-color:#4a
     <div class="images" id="problemImages"></div>
 
     <label class="answer-label" for="answerInput">내 답안</label>
-    <textarea id="answerInput" placeholder="계산과정과 최종 답을 입력하세요"></textarea>
+    <div id="answerFields" class="answer-fields"></div>
+    <div class="answer-field-tools">
+      <button type="button" id="addAnswerField">+ 답란 추가</button>
+      <button type="button" id="removeAnswerField">− 답란 삭제</button>
+    </div>
+    <textarea id="answerInput" style="display:none" aria-hidden="true"></textarea>
     <div class="message" id="message"></div>
 
     <section class="pen" id="penArea">
@@ -246,7 +393,78 @@ const resumeSnapshot={lastId:meta.lastId||'',chapter:meta.chapter||'',mode:meta.
 
 for(const chapter of CHAPTERS){const o=document.createElement('option');o.value=chapter;o.textContent=chapter;$('chapterSelect').appendChild(o);}
 
+
 function rec(item){return saved[item.id]||{};}
+
+function defaultAnswerCount(item){
+  // 현재 확인된 아스팔트 003은 4개 답을 요구
+  if(item && item.chapter && item.chapter.includes('아스팔트') && /003$/.test(item.id)) return 4;
+  return 1;
+}
+function getAnswerParts(item){
+  const r=rec(item);
+  if(Array.isArray(r.answerParts) && r.answerParts.length) return r.answerParts.slice();
+  const count=Math.max(1, Number(r.answerCount)||defaultAnswerCount(item));
+  const old=(r.answer||'');
+  if(count===1) return [old];
+  const lines=old ? old.split(/\n+/) : [];
+  const parts=[];
+  for(let i=0;i<count;i++) parts.push(lines[i]||'');
+  return parts;
+}
+function collectAnswerParts(){
+  const item=current(); if(!item) return [];
+  const boxes=[...document.querySelectorAll('#answerFields textarea[data-answer-part]')];
+  const parts=boxes.map(x=>x.value);
+  saved[item.id]=saved[item.id]||{};
+  saved[item.id].answerParts=parts;
+  saved[item.id].answerCount=parts.length || 1;
+  saved[item.id].answer=parts.join('\n');
+  $('answerInput').value=saved[item.id].answer;
+  return parts;
+}
+function renderAnswerFields(item){
+  const host=$('answerFields'); if(!host)return;
+  const parts=getAnswerParts(item);
+  host.innerHTML='';
+  parts.forEach((value,i)=>{
+    const row=document.createElement('div'); row.className='answer-part';
+    const lab=document.createElement('label'); lab.textContent=(i+1)+'번 답';
+    const ta=document.createElement('textarea');
+    ta.dataset.answerPart=String(i);
+    ta.placeholder=(i+1)+'번 답을 입력하세요';
+    ta.value=value||'';
+    ta.addEventListener('input',()=>{
+      collectAnswerParts();
+      clearTimeout(answerSaveTimer);
+      answerSaveTimer=setTimeout(persist,350);
+    });
+    ta.addEventListener('keydown',(e)=>{
+      if(e.key==='Enter' && !e.shiftKey){
+        e.preventDefault();
+        collectAnswerParts();
+        const boxes=[...document.querySelectorAll('#answerFields textarea[data-answer-part]')];
+        const next=boxes[i+1];
+        if(next){
+          next.focus();
+          next.select();
+        }else{
+          ta.blur();
+          persist();
+        }
+      }
+    });
+    row.appendChild(lab); row.appendChild(ta); host.appendChild(row);
+  });
+  $('answerInput').value=parts.join('\n');
+  if(!document.querySelector('.answer-enter-note')){
+    const note=document.createElement('div');
+    note.className='answer-enter-note';
+    note.textContent='Enter: 다음 답란으로 이동 · Shift+Enter: 줄바꿈';
+    host.parentNode.insertBefore(note,$('answerFields').nextSibling);
+  }
+}
+
 function isWrong(r){return r.result==='wrong'||r.wrong===true;}
 function isCorrect(r){return r.result==='correct';}
 function persist(){
@@ -256,9 +474,7 @@ function persist(){
 }
 function commitAnswer(){
   if(!filtered.length)return;
-  const item=current();
-  saved[item.id]=saved[item.id]||{};
-  saved[item.id].answer=$('answerInput').value;
+  collectAnswerParts();
   if(answerSaveTimer){clearTimeout(answerSaveTimer);answerSaveTimer=null;}
   persist();
 }
@@ -305,7 +521,7 @@ function savePosition(item){
 function renderEmpty(){
   $('questionTitle').textContent='조건에 맞는 문제가 없습니다.';
   $('problemImages').innerHTML='<div class="empty-state">현재 선택한 범위에 해당하는 문항이 없습니다.<br>학습 범위 또는 챕터를 변경하세요.</div>';
-  $('solutionImages').innerHTML='';$('answerInput').value='';$('answerInput').disabled=true;
+  $('solutionImages').innerHTML='';$('answerInput').value='';$('answerInput').disabled=true;if($('answerFields'))$('answerFields').innerHTML='';
   $('solutionArea').style.display='none';$('penArea').style.display='none';
   $('topPosition').textContent='0 / 0';$('bottomPosition').textContent='0 / 0';
   ['gradeBtn','solutionBtn','penBtn','knownBtn','unknownBtn','prevBtn','nextBtn','randomBtn'].forEach(id=>$(id).disabled=true);
@@ -318,7 +534,7 @@ function render(){
   $('questionTitle').textContent=item.chapter+' · 문제 '+item.id.split('-').pop();
   showImages($('problemImages'),item.problem,'문제',false);
   $('solutionImages').innerHTML='';
-  $('answerInput').value=rec(item).answer||'';
+  renderAnswerFields(item);
   $('answerKey').textContent='';$('answerKey').style.display='none';
   $('solutionArea').style.display='none';$('solutionBtn').textContent='정답·해설 보기';
   $('penArea').style.display='none';$('penBtn').textContent='풀이 필기';
@@ -386,10 +602,28 @@ $('resumeBtn').onclick=()=>{
 $('resetBtn').onclick=()=>{if(confirm('저장된 답안과 학습기록을 모두 초기화할까요?')){localStorage.removeItem(STORAGE_KEY);location.reload();}};
 $('prevBtn').onclick=()=>{if(!filtered.length)return;commitAnswer();cursor=(cursor-1+filtered.length)%filtered.length;render();};
 $('nextBtn').onclick=()=>{if(!filtered.length)return;commitAnswer();cursor=(cursor+1)%filtered.length;render();};
-$('answerInput').oninput=()=>{
-  const item=current();if(!item)return;
-  saved[item.id]=saved[item.id]||{};saved[item.id].answer=$('answerInput').value;
-  clearTimeout(answerSaveTimer);answerSaveTimer=setTimeout(persist,350);
+
+
+$('addAnswerField').onclick=()=>{
+  const item=current(); if(!item)return;
+  collectAnswerParts();
+  const r=saved[item.id]=saved[item.id]||{};
+  const parts=Array.isArray(r.answerParts)?r.answerParts.slice():[''];
+  parts.push('');
+  r.answerParts=parts;r.answerCount=parts.length;r.answer=parts.join('\n');
+  renderAnswerFields(item);persist();
+  const boxes=[...document.querySelectorAll('#answerFields textarea[data-answer-part]')];
+  if(boxes.length)boxes[boxes.length-1].focus();
+};
+$('removeAnswerField').onclick=()=>{
+  const item=current(); if(!item)return;
+  collectAnswerParts();
+  const r=saved[item.id]=saved[item.id]||{};
+  const parts=Array.isArray(r.answerParts)?r.answerParts.slice():[''];
+  if(parts.length<=1){$('message').textContent='답란은 최소 1개가 필요합니다.';return;}
+  parts.pop();
+  r.answerParts=parts;r.answerCount=parts.length;r.answer=parts.join('\n');
+  renderAnswerFields(item);persist();
 };
 $('gradeBtn').onclick=()=>{commitAnswer();$('message').textContent=$('answerInput').value.trim()?'답안을 저장했습니다. 해설과 비교해 직접 판정하세요.':'빈 답안 상태로 저장했습니다.';};
 $('solutionBtn').onclick=()=>{
@@ -441,6 +675,82 @@ $('studyMode').value=['all','unknown','wrong','review'].includes(meta.mode)?meta
 rebuildFiltered(meta.lastId);
 if(!filtered.length&&($('chapterSelect').value||$('studyMode').value!=='all')){$('chapterSelect').value='';$('studyMode').value='all';rebuildFiltered(meta.lastId);}
 render();
+</script>
+
+<div class="qpick-modal" id="qpickModal" aria-hidden="true">
+  <div class="qpick-card" role="dialog" aria-modal="true" aria-labelledby="qpickTitle">
+    <div class="qpick-head">
+      <strong id="qpickTitle">문제 선택</strong>
+      <button type="button" id="qpickClose">닫기</button>
+    </div>
+    <div class="qpick-sub" id="qpickSub"></div>
+    <div class="qpick-grid" id="qpickGrid"></div>
+  </div>
+</div>
+
+<script>
+
+(function(){
+  const modal=document.getElementById('qpickModal');
+  const grid=document.getElementById('qpickGrid');
+  const sub=document.getElementById('qpickSub');
+  const closeBtn=document.getElementById('qpickClose');
+  const pos=document.getElementById('bottomPosition');
+  if(!modal||!grid||!sub||!closeBtn||!pos)return;
+
+  function labelFor(item, n){
+    if(item && item.id){
+      const m=String(item.id).match(/(\d+)$/);
+      if(m) return String(parseInt(m[1],10));
+    }
+    return String(n+1);
+  }
+
+  function openPicker(){
+    if(!filtered || !filtered.length) return;
+    grid.innerHTML='';
+    const chapter=document.getElementById('chapterSelect');
+    const chapterText=chapter && chapter.value ? chapter.value : '현재 학습 범위';
+    sub.textContent=chapterText+' · '+filtered.length+'문항';
+    filtered.forEach((itemIndex, i)=>{
+      const item=ITEMS[itemIndex];
+      const b=document.createElement('button');
+      b.type='button';
+      b.textContent=labelFor(item,i)+'번';
+      if(i===cursor)b.classList.add('current');
+      b.title=(item && item.id ? item.id : '') + ' · ' + (item && item.chapter ? item.chapter : '');
+      b.onclick=()=>{
+        if(typeof commitAnswer==='function'){ try{commitAnswer();}catch(e){} }
+        cursor=i;
+        if(typeof render==='function')render();
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden','true');
+        window.scrollTo({top:0,behavior:'smooth'});
+      };
+      grid.appendChild(b);
+    });
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+  }
+
+  pos.setAttribute('role','button');
+  pos.setAttribute('tabindex','0');
+  pos.setAttribute('aria-label','원하는 문제 번호 선택');
+  pos.onclick=openPicker;
+  pos.onkeydown=(e)=>{
+    if(e.key==='Enter'||e.key===' '){e.preventDefault();openPicker();}
+  };
+  closeBtn.onclick=()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true');};
+  modal.addEventListener('click',(e)=>{
+    if(e.target===modal){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');}
+  });
+  document.addEventListener('keydown',(e)=>{
+    if(e.key==='Escape'&&modal.classList.contains('open')){
+      modal.classList.remove('open');modal.setAttribute('aria-hidden','true');
+    }
+  });
+})();
+
 </script>
 </body>
 </html>
